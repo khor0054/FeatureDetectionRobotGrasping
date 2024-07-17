@@ -1,0 +1,7 @@
+In recent years, the integration of deep learning into robotic grasping algorithms has led to significant advancements in this field. However, one of the challenges faced by many existing deep learning based grasping algorithms is their reliance on extensive training data, which makes them less effective when encountering novel objects not present in the training dataset. This paper presents a simple and effective grasping algorithm that addresses this challenge through the utilization of a deep learning-based object detector, focusing on oriented detection of key features shared among most objects, namely straight edges and corners. By integrating these features with information obtained through image segmentation, the proposed algorithm can logically deduce a grasping pose without being limited by the size of the training dataset. Experimental results on actual robotic grasping of novel objects over 400 trials show that the proposed method can achieve a higher grasp success rate of 98.25% compared to existing methods. 
+
+The following presents the actual code used in the conduct of the experiments. The algorithm is based off a modified version of yolov5 which can be used to detect rotated objects. The original repository can be found here: https://github.com/hukaixuan19970627/yolov5_obb. 
+
+Please refer to /docs/install.md for installation requirements and instructions. 
+
+*Do take note that the code is specifically designed to work only with the hardware used in experiments (Universal Robot UR5e, OnRobot RG2 Robot Gripper, Intel RealSense Camera).
